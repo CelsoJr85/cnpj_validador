@@ -10,7 +10,7 @@ O **cnpj_validador** é uma biblioteca Python leve, rápida e sem dependências 
 
 ## 📦 Instalação
 
-Após a publicação no PyPI, você poderá instalar a biblioteca via `pip`:
+Você poderá instalar a biblioteca via `pip`:
 
 ```bash
 pip install cnpj_validador
