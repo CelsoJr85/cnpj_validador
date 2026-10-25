@@ -16,22 +16,26 @@ Após a publicação no PyPI, você poderá instalar a biblioteca via `pip`:
 pip install cnpj_validador
 ```
 
-## 🛠️ Como Usar
+## 🛠️ Como Usar e Testar
 
-Basta importar a função `validar_cnpj` e passar o documento como string. A função retorna `True` para documentos válidos e `False` para inválidos.
+O projeto já inclui um script de testes pronto para ser executado no terminal.
 
-```python
-from cnpj_validador import validar_cnpj
-
-# Testando formato alfanumérico (Novo)
-print(validar_cnpj("12.ABC.345/0001-XX"))  # Retorna True ou False
-
-# Testando formato tradicional apenas números (Antigo)
-print(validar_cnpj("12.345.678/0001-00"))  # Retorna True ou False
-
-# Também aceita strings sem pontuação
-print(validar_cnpj("12ABC3450001XX"))       # Retorna True ou False
+1. Certifique-se de ter instalado o pacote localmente:
+```bash
+pip install -e .
 ```
+
+2. Execute o arquivo de testes que está na raiz do projeto:
+```bash
+python teste.py
+```
+
+3. Digite qualquer CNPJ (antigo ou novo alfanumérico) direto no prompt do terminal para obter o retorno em tempo real:
+```text
+Digite um cnpj para ser validado: 12.ABC.345/01DE-35
+✅ Sucesso: O CNPJ Alfanumérico '12.ABC.345/01DE-35' é VÁLIDO!
+```
+
 
 ## ⚙️ Regra de Validação
 
