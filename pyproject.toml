@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cnpj_validador"
+version = "0.1.0"
+authors = [
+  { name="Celso Custodio Junior", email="celsocustodiojunior1985@gmail.com" },
+]
+description = "Validador unificado de CNPJ compatível com os formatos antigo (numérico) e novo (alfanumérico) da Receita Federal."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cnpj_validador"]
